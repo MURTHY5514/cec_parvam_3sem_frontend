@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms in html</h1>
+    <p>Registration form</p>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="f_name">First Name: </label>
+            <input type="text" name="f_name" class="f_name" id="f_name" placeholder="Enter your f name" required> <br>
+            <label for="l_name">Last Name: </label>
+            <input type="text" name="l_name" id="l_name" placeholder="Enter you l name"> <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" class="email" placeholder="Enter your email"> <br>
+        </fieldset>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" class="password" placeholder="Enter your password"> <br>
+        <label>Gender: </label> <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" class="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" class="female">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" class="other"> <br>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" class="age" placeholder="Enter your age"> <br>
+
+        <label>Skills:</label> <br>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skills" id="html" class="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="skills" id="css" class="css">
+        <label for="js">JS</label>
+        <input type="checkbox" name="skills" id="js" class="js">
+        <label for="react">REACT</label>
+        <input type="checkbox" name="skills" id="react" class="react"> <br>
+
+        <label for="dob">DOB: </label>
+        <input type="date" name="dob" id="dob" class="dob"> <br>
+
+        <label for="address">Address: </label>
+        <textarea name="address" id="address" class="address" placeholder="Enter your address" rows="5"
+            cols="50"></textarea> <br>
+
+        <input type="submit" value="Register" id="submit" class="submit">
+        <input type="reset" value="Reset" class="reset" id="reset">
+    </form>
+</body>
+
+</html>
