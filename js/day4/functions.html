@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>3 ways to create a functions in js</h1>
+    <p>1. function decleration</p>
+    <p>2. function expression</p>
+    <p>3. arrow function</p>
+    <pre>
+        1. function fun_name(parameters){
+            //body of function
+        }
+        fun_name(arguments);
+
+        2. const fun_name = function(parameters){
+            //body of function
+        }
+        fun_name(arguments);
+
+        3. const fun_name = (parameters) =>{
+            //body of function
+        }
+        fun_name(arguments);
+    </pre>
+    <script>
+        // 1. function decleration
+        function add(a, b) {
+            console.log("res: ", a + b);
+        }
+        add(10, 20);
+        add(30, 20);
+
+        //2. function expression
+        const sub = function (a, b) {
+            console.log("sub: ", a - b);
+        }
+        sub(20, 10);
+
+        //3. arrow function
+        const mul = (a, b) => {
+            console.log("mul: ", a * b);
+        }
+        mul(20, 30);
+    </script>
+</body>
+
+</html>
